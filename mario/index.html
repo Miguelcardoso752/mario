@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Super Mario Galaxy - Exploração cósmica, personagens icônicos e aventuras infinitas no universo intergaláctico.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Super Mario Galaxy">
+    <meta property="og:description" content="Embarque em uma aventura cósmica com Mario!">
+    <meta property="og:image" content="assets/images/mario-original.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Super Mario Galaxy - Landing Page</title>
+
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Starfield Background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main">Pular para conteúdo</a>
+
+    <!-- HEADER & NAVIGATION -->
+    <header role="banner">
+        <nav aria-label="Navegação Principal">
+            <a href="#" class="brand">
+                <span aria-hidden="true">★</span>
+                <span>Mario Galaxy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#story">História</a></li>
+                <li><a href="#characters">Heróis</a></li>
+                <li><a href="#allies">Aliados</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#cta">Jogar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- HERO SECTION -->
+        <section class="hero" id="home" aria-label="Hero Section">
+            <div class="hero-content">
+                <span class="hero-eyebrow" role="doc-subtitle">Bem-vindo ao Cosmos</span>
+                <h1>
+                    Super Mario<br>
+                    <span class="accent">Galaxy</span>
+                </h1>
+                <p class="hero-description">
+                    Embarque em uma aventura cósmica única através de galáxias distantes.
+                    Explore mundos mágicos, resgate a Princesa Peach e salve o universo com Mario.
+                </p>
+                <div class="cta-group">
+                    <a href="#characters" class="btn btn-primary">Conhecer Heróis</a>
+                    <a href="#gallery" class="btn btn-secondary">Ver Aventura</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/images/mario-original.webp" alt="Mario em ação no espaço" class="hero-image" loading="lazy">
+                <img src="assets/images/estrela-min.webp" alt="Estrela de poder" class="hero-star" loading="lazy" aria-hidden="true">
+            </div>
+        </section>
+
+        <!-- STORYTELLING SECTION -->
+        <section class="storytelling" id="story" aria-labelledby="story-title">
+            <div class="storytelling-grid">
+                <article class="story-card story-card-left">
+                    <div class="story-image">
+                        <img src="assets/images/peach.webp" alt="Princesa Peach" loading="lazy">
+                    </div>
+                    <div class="story-content">
+                        <h2 id="story-title" class="story-title">A Jornada Começa</h2>
+                        <p class="story-text">
+                            A Princesa Peach foi capturada pelo maléfico Bowser e levada para longe do Reino Cogumelo.
+                            Mario, o bravo encanador, é chamado para uma missão épica através do cosmos.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="story-card story-card-right">
+                    <div class="story-content">
+                        <h3 class="story-title">Um Universo de Possibilidades</h3>
+                        <p class="story-text">
+                            Com a ajuda de amigos especiais, Mario viaja por galáxias incríveis,
+                            coletando as poderosas Estrelas de Poder que podem salvar o universo inteiro.
+                        </p>
+                    </div>
+                    <div class="story-image">
+                        <img src="assets/images/nebulosa-quad.webp" alt="Nebulosa cósmica" loading="lazy">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MAIN CHARACTERS SECTION -->
+        <section class="characters" id="characters" aria-labelledby="char-title">
+            <div class="section-header">
+                <span class="section-eyebrow">Os Heróis</span>
+                <h2 id="char-title" class="section-title">Trio Principal</h2>
+                <p class="section-subtitle">
+                    Conheça os protagonistas dessa épica aventura cósmica.
+                </p>
+            </div>
+
+            <div class="trio-grid">
+                <!-- Mario -->
+                <article class="main-character-card">
+                    <div class="char-image-wrapper">
+                        <img src="assets/images/mario-original.webp" alt="Mario - O Herói" class="char-portrait" loading="lazy">
+                        <span class="char-badge">Protagonista</span>
+                    </div>
+                    <div class="char-details">
+                        <h3 class="char-name">Mario</h3>
+                        <p class="char-role">O Herói Corajoso</p>
+                        <p class="char-bio">
+                            O lendário encanador que atravessa galáxias inteiras para resgatar a Princesa Peach
+                            e salvar o universo do mal de Bowser.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Luigi -->
+                <article class="main-character-card">
+                    <div class="char-image-wrapper">
+                        <img src="assets/images/luigi.webp" alt="Luigi - O Companheiro" class="char-portrait" loading="lazy">
+                        <span class="char-badge">Irmão</span>
+                    </div>
+                    <div class="char-details">
+                        <h3 class="char-name">Luigi</h3>
+                        <p class="char-role">O Companheiro Leal</p>
+                        <p class="char-bio">
+                            Sempre ao lado de Mario, Luigi demonstra coragem e determinação
+                            em cada desafio cósmico enfrentado.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Peach -->
+                <article class="main-character-card">
+                    <div class="char-image-wrapper">
+                        <img src="assets/images/peach.webp" alt="Peach - A Princesa" class="char-portrait" loading="lazy">
+                        <span class="char-badge">Princesa</span>
+                    </div>
+                    <div class="char-details">
+                        <h3 class="char-name">Peach</h3>
+                        <p class="char-role">A Princesa do Reino</p>
+                        <p class="char-bio">
+                            Capturada por Bowser, Peach é a razão pela qual Mario embarca nessa
+                            aventura emocionante através do espaço.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ALLIES SECTION -->
+        <section class="allies" id="allies" aria-labelledby="allies-title">
+            <div class="section-header">
+                <span class="section-eyebrow">Companheiros Cósmicos</span>
+                <h2 id="allies-title" class="section-title">Aliados de Poder</h2>
+                <p class="section-subtitle">
+                    Conheca os seres especiais que ajudam Mario em sua jornada.
+                </p>
+            </div>
+
+            <div class="allies-grid">
+                <!-- Rosalina -->
+                <article class="ally-card">
+                    <div class="ally-image">
+                        <img src="assets/images/rosalina.webp" alt="Rosalina - Guardiã Cósmica" loading="lazy">
+                    </div>
+                    <div class="ally-content">
+                        <h3 class="ally-name">Rosalina</h3>
+                        <span class="ally-title">Guardiã das Estrelas</span>
+                        <p class="ally-description">
+                            A misteriosa e poderosa guardiã cósmica que comanda a Nave Estelar.
+                            Ela ajuda Mario na sua jornada oferecendo sabedoria e proteção.
+                        </p>
+                        <div class="ally-skills">
+                            <span class="skill">🌟 Magia Cósmica</span>
+                            <span class="skill">✨ Proteção</span>
+                            <span class="skill">🚀 Viagem Intergaláctica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Yoshi -->
+                <article class="ally-card">
+                    <div class="ally-image">
+                        <img src="assets/images/yoshi-perso.webp" alt="Yoshi - O Dinossauro" loading="lazy">
+                    </div>
+                    <div class="ally-content">
+                        <h3 class="ally-name">Yoshi</h3>
+                        <span class="ally-title">O Companheiro Perfeito</span>
+                        <p class="ally-description">
+                            Este dinossauro adorável é um aliado leal que ajuda Mario a superar os
+                            desafios mais difíceis da jornada cósmica.
+                        </p>
+                        <div class="ally-skills">
+                            <span class="skill">🎯 Precisão</span>
+                            <span class="skill">🏃 Velocidade</span>
+                            <span class="skill">💪 Força</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- VILLAIN SECTION -->
+        <section class="villain" id="villain" aria-labelledby="villain-title">
+            <div class="villain-content">
+                <div class="villain-image">
+                    <img src="assets/images/bowser-jr.webp" alt="Bowser Jr. - O Antagonista" loading="lazy">
+                </div>
+                <div class="villain-text">
+                    <span class="section-eyebrow eyebrow-light">O Vilão</span>
+                    <h2 id="villain-title" class="villain-title">Bowser Jr.</h2>
+                    <p class="villain-description">
+                        O filho do terrível Bowser é um antagonista formidável que se coloca no caminho de Mario.
+                        Com toda a inteligência e maldade herdadas de seu pai, Bowser Jr. representa um dos maiores desafios
+                        da aventura cósmica.
+                    </p>
+                    <div class="villain-stats">
+                        <div class="stat">
+                            <span class="stat-label">Ameaça</span>
+                            <div class="stat-bar"><span style="width: 90%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Inteligência</span>
+                            <div class="stat-bar"><span style="width: 80%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Poder Mágico</span>
+                            <div class="stat-bar"><span style="width: 85%"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POWER STARS SECTION -->
+        <section class="power-stars" id="power-stars" aria-labelledby="stars-title">
+            <div class="section-header">
+                <span class="section-eyebrow">Fonte de Poder</span>
+                <h2 id="stars-title" class="section-title">Estrelas de Poder</h2>
+                <p class="section-subtitle">
+                    Colete as Estrelas de Poder para salvar o universo e derrotar o mal.
+                </p>
+            </div>
+
+            <div class="stars-showcase">
+                <div class="star-visual">
+                    <img src="assets/images/estrela-min.webp" alt="Estrela de Poder" class="star-image" loading="lazy">
+                </div>
+                <div class="star-content">
+                    <h3>Coleta as Estrelas</h3>
+                    <ul class="stars-list">
+                        <li>⭐ 120 Estrelas para Coletar</li>
+                        <li>🌌 Espalhadas por Galáxias Diferentes</li>
+                        <li>💫 Cada Uma Traz Poderes Especiais</li>
+                        <li>✨ Necessárias para Derrotar o Mal</li>
+                        <li>🏆 Desafios Únicos em Cada Uma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery" id="gallery" aria-labelledby="gal-title">
+            <div class="section-header">
+                <span class="section-eyebrow">Aventura Cósmica</span>
+                <h2 id="gal-title" class="section-title">Galeria Interativa</h2>
+                <p class="section-subtitle">
+                    Veja os melhores momentos da jornada épica pelo universo.
+                </p>
+            </div>
+
+            <div class="gallery-grid" role="grid">
+                <!-- Videos -->
+                <figure class="gallery-item gallery-video" role="gridcell">
+                    <video controls preload="metadata" poster="assets/images/mario-original.webp">
+                        <source src="assets/videos/mario-clip-min.mp4" type="video/mp4">
+                        <source src="assets/videos/mario-clip-alpha.webm" type="video/webm">
+                    </video>
+                    <figcaption>Mario em Ação</figcaption>
+                </figure>
+
+                <figure class="gallery-item gallery-video" role="gridcell">
+                    <video controls preload="metadata" poster="assets/images/nebulosa-quad.webp">
+                        <source src="assets/videos/planet-3d-min.mp4" type="video/mp4">
+                        <source src="assets/videos/planet-3d-alpha.webm" type="video/webm">
+                    </video>
+                    <figcaption>Planetas 3D</figcaption>
+                </figure>
+
+                <figure class="gallery-item gallery-video" role="gridcell">
+                    <video controls preload="metadata" poster="assets/images/yoshi-perso.webp">
+                        <source src="assets/videos/yoshi-video-min.mp4" type="video/mp4">
+                        <source src="assets/videos/yoshi-video-alpha.webm" type="video/webm">
+                    </video>
+                    <figcaption>Yoshi em Aventura</figcaption>
+                </figure>
+
+                <!-- Character Images -->
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/mario-original.webp" alt="Mario - Herói Principal" loading="lazy">
+                    <figcaption>Mario</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/luigi.webp" alt="Luigi - Companheiro" loading="lazy">
+                    <figcaption>Luigi</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/peach.webp" alt="Peach - Princesa" loading="lazy">
+                    <figcaption>Peach</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/rosalina.webp" alt="Rosalina - Guardiã Cósmica" loading="lazy">
+                    <figcaption>Rosalina</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/yoshi-perso.webp" alt="Yoshi - Dinossauro Aliado" loading="lazy">
+                    <figcaption>Yoshi</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/nebulosa-quad.webp" alt="Nebulosa Cósmica" loading="lazy">
+                    <figcaption>Nebulosa</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/estrela-min.webp" alt="Estrela de Poder" loading="lazy">
+                    <figcaption>Estrela de Poder</figcaption>
+                </figure>
+
+                <figure class="gallery-item" role="gridcell">
+                    <img src="assets/images/bowser-jr.webp" alt="Bowser Jr. - Antagonista" loading="lazy">
+                    <figcaption>Bowser Jr.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section" id="cta" aria-labelledby="cta-title">
+            <div class="cta-content">
+                <h2 id="cta-title" class="cta-title">Pronto para Salvar o Universo?</h2>
+                <p class="cta-description">
+                    Junte-se a Mario e seus aliados em uma aventura épica pelo cosmos.
+                    Coleta as Estrelas de Poder, defronta Bowser Jr. e torne-se um herói intergaláctico!
+                </p>
+                <div class="cta-group">
+                    <a href="#" class="btn btn-primary">Jogar Agora</a>
+                    <a href="#characters" class="btn btn-ghost">Conhecer Heróis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#">Sobre o Jogo</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Desenvolvimento</a></li>
+                    <li><a href="#">Créditos</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Comunidade</h3>
+                <ul>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Reportar Bug</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">EULA</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Super Mario Galaxy. Todos os direitos reservados. Nintendo © 2006.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scroll-animations.js" defer></script>
+    <script src="js/starfield.js" defer></script>
+    <script src="js/interactions.js" defer></script>
+</body>
+
+</html>
